@@ -1,0 +1,1320 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>UIView(Positioning) Category Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.0.5 (build 789)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">RandomLib </a></h1>
+				<a id="developerHome" href="../index.html">Random Ideas, LLC</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">UIView(Positioning) Category Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/bottom">&nbsp;&nbsp;&nbsp;&nbsp;bottom</option>
+	
+	<option value="//api/name/bottomLeft">&nbsp;&nbsp;&nbsp;&nbsp;bottomLeft</option>
+	
+	<option value="//api/name/bottomLeftBounds">&nbsp;&nbsp;&nbsp;&nbsp;bottomLeftBounds</option>
+	
+	<option value="//api/name/bottomRight">&nbsp;&nbsp;&nbsp;&nbsp;bottomRight</option>
+	
+	<option value="//api/name/bottomRightBounds">&nbsp;&nbsp;&nbsp;&nbsp;bottomRightBounds</option>
+	
+	<option value="//api/name/boundsCenter">&nbsp;&nbsp;&nbsp;&nbsp;boundsCenter</option>
+	
+	<option value="//api/name/height">&nbsp;&nbsp;&nbsp;&nbsp;height</option>
+	
+	<option value="//api/name/left">&nbsp;&nbsp;&nbsp;&nbsp;left</option>
+	
+	<option value="//api/name/right">&nbsp;&nbsp;&nbsp;&nbsp;right</option>
+	
+	<option value="//api/name/top">&nbsp;&nbsp;&nbsp;&nbsp;top</option>
+	
+	<option value="//api/name/topLeft">&nbsp;&nbsp;&nbsp;&nbsp;topLeft</option>
+	
+	<option value="//api/name/topLeftBounds">&nbsp;&nbsp;&nbsp;&nbsp;topLeftBounds</option>
+	
+	<option value="//api/name/topRight">&nbsp;&nbsp;&nbsp;&nbsp;topRight</option>
+	
+	<option value="//api/name/topRightBounds">&nbsp;&nbsp;&nbsp;&nbsp;topRightBounds</option>
+	
+	<option value="//api/name/width">&nbsp;&nbsp;&nbsp;&nbsp;width</option>
+	
+	<option value="//api/name/x">&nbsp;&nbsp;&nbsp;&nbsp;x</option>
+	
+	<option value="//api/name/y">&nbsp;&nbsp;&nbsp;&nbsp;y</option>
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/evenlyDistributeHorizontallySubviewsInArray:">&nbsp;&nbsp;&nbsp;&nbsp;- evenlyDistributeHorizontallySubviewsInArray:</option>
+	
+	<option value="//api/name/frameInRelationToView:">&nbsp;&nbsp;&nbsp;&nbsp;- frameInRelationToView:</option>
+	
+	<option value="//api/name/spreadSubviewsIntoGrid:">&nbsp;&nbsp;&nbsp;&nbsp;- spreadSubviewsIntoGrid:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Operations on the CENTER property of the view">Operations on the CENTER property of the view</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Operations on the edges of the view.">Operations on the edges of the view.</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/bottom">bottom</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/bottomLeft">bottomLeft</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/bottomLeftBounds">bottomLeftBounds</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/bottomRight">bottomRight</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/bottomRightBounds">bottomRightBounds</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/boundsCenter">boundsCenter</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/height">height</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/left">left</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/right">right</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/top">top</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/topLeft">topLeft</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/topLeftBounds">topLeftBounds</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/topRight">topRight</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/topRightBounds">topRightBounds</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/width">width</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/x">x</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/y">y</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/evenlyDistributeHorizontallySubviewsInArray:">evenlyDistributeHorizontallySubviewsInArray:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/frameInRelationToView:">frameInRelationToView:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/spreadSubviewsIntoGrid:">spreadSubviewsIntoGrid:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="UIView(Positioning) Category Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">UIView(Positioning) Category Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">UIView+Positioning.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>These categor<a href="#//api/name/y">y</a> methods are probabl<a href="#//api/name/y">y</a> prett<a href="#//api/name/y">y</a> dangerous.  Their purpose is to allow you to quickl<a href="#//api/name/y">y</a> and easil<a href="#//api/name/y">y</a> position your view within another view.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Operations on the CENTER property of the view" name="task_Operations on the CENTER property of the view"></a>
+						<h3 class="subsubtitle task-title">Operations on the CENTER property of the view</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/x">&nbsp;&nbsp;x</a></code>
+		<span class="tooltip"><p>Sets the x coordinate of center.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/y">&nbsp;&nbsp;y</a></code>
+		<span class="tooltip"><p>Sets the y coordinate of center.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Operations on the edges of the view." name="task_Operations on the edges of the view."></a>
+						<h3 class="subsubtitle task-title">Operations on the edges of the view.</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/top">&nbsp;&nbsp;top</a></code>
+		<span class="tooltip"><p>Sets the top edge of the view</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/left">&nbsp;&nbsp;left</a></code>
+		<span class="tooltip"><p>Sets the left edge of the view</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/width">&nbsp;&nbsp;width</a></code>
+		<span class="tooltip"><p>Sets the width of the view</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/height">&nbsp;&nbsp;height</a></code>
+		<span class="tooltip"><p>Sets the height of the view</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/right">&nbsp;&nbsp;right</a></code>
+		<span class="tooltip"><p>Sets the right edge of the view to the given location b<a href="#//api/name/y">y</a> moving origin appropriatel<a href="#//api/name/y">y</a>. Does not change <a href="#//api/name/width">width</a>.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/bottom">&nbsp;&nbsp;bottom</a></code>
+		<span class="tooltip"><p>Sets the bottom edge of the view to the given location b<a href="#//api/name/y">y</a> moving origin appropriatel<a href="#//api/name/y">y</a>. Does not change <a href="#//api/name/height">height</a>.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/boundsCenter">&nbsp;&nbsp;boundsCenter</a></code>
+		<span class="tooltip"><p>Gets the center of the view&rsquo;s bounds.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/topLeft">&nbsp;&nbsp;topLeft</a></code>
+		<span class="tooltip"><p>Gets the <a href="#//api/name/top">top</a> <a href="#//api/name/left">left</a> corner of the view&rsquo;s frame.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/topRight">&nbsp;&nbsp;topRight</a></code>
+		<span class="tooltip"><p>Gets the <a href="#//api/name/top">top</a> <a href="#//api/name/right">right</a> corner of the view&rsquo;s frame.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/bottomLeft">&nbsp;&nbsp;bottomLeft</a></code>
+		<span class="tooltip"><p>Gets the <a href="#//api/name/bottom">bottom</a> <a href="#//api/name/left">left</a> corner of the view&rsquo;s frame.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/bottomRight">&nbsp;&nbsp;bottomRight</a></code>
+		<span class="tooltip"><p>Gets the <a href="#//api/name/bottom">bottom</a> <a href="#//api/name/right">right</a> corner of the view&rsquo;s frame.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/topLeftBounds">&nbsp;&nbsp;topLeftBounds</a></code>
+		<span class="tooltip"><p>Gets the <a href="#//api/name/top">top</a> <a href="#//api/name/left">left</a> corner of the view&rsquo;s bounds.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/topRightBounds">&nbsp;&nbsp;topRightBounds</a></code>
+		<span class="tooltip"><p>Gets the <a href="#//api/name/top">top</a> <a href="#//api/name/right">right</a> corner of the view&rsquo;s bounds.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/bottomLeftBounds">&nbsp;&nbsp;bottomLeftBounds</a></code>
+		<span class="tooltip"><p>Gets the <a href="#//api/name/bottom">bottom</a> <a href="#//api/name/left">left</a> corner of the view&rsquo;s bounds.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/bottomRightBounds">&nbsp;&nbsp;bottomRightBounds</a></code>
+		<span class="tooltip"><p>Gets the <a href="#//api/name/bottom">bottom</a> <a href="#//api/name/right">right</a> corner of the view&rsquo;s bounds.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/evenlyDistributeHorizontallySubviewsInArray:">&ndash;&nbsp;evenlyDistributeHorizontallySubviewsInArray:</a></code>
+		<span class="tooltip"><p>Given an arra<a href="#//api/name/y">y</a> of subviews, adjust their frames to evenl<a href="#//api/name/y">y</a> distribute them within the parent view.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/spreadSubviewsIntoGrid:">&ndash;&nbsp;spreadSubviewsIntoGrid:</a></code>
+		<span class="tooltip"><p>Given a two dimensional arra<a href="#//api/name/y">y</a> of arrays of subviews, distribute them evenl<a href="#//api/name/y">y</a> within the receiver. All rows must have all the same number of elements. If you have a row with fewer elements, fill with NSNull to pad the row.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/frameInRelationToView:">&ndash;&nbsp;frameInRelationToView:</a></code>
+		<span class="tooltip"><p>Returns the frame of the receiver within the coordinate system of the given view.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/bottom" title="bottom"></a>
+	<h3 class="subsubtitle method-title">bottom</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets the bottom edge of the view to the given location b<a href="#//api/name/y">y</a> moving origin appropriatel<a href="#//api/name/y">y</a>. Does not change <a href="#//api/name/height">height</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property CGFloat bottom</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Sets the bottom edge of the view to the given location b<a href="#//api/name/y">y</a> moving origin appropriatel<a href="#//api/name/y">y</a>. Does not change <a href="#//api/name/height">height</a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UIView+Positioning.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/bottomLeft" title="bottomLeft"></a>
+	<h3 class="subsubtitle method-title">bottomLeft</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Gets the <a href="#//api/name/bottom">bottom</a> <a href="#//api/name/left">left</a> corner of the view&rsquo;s frame.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly) CGPoint bottomLeft</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Gets the <a href="#//api/name/bottom">bottom</a> <a href="#//api/name/left">left</a> corner of the view&rsquo;s frame.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UIView+Positioning.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/bottomLeftBounds" title="bottomLeftBounds"></a>
+	<h3 class="subsubtitle method-title">bottomLeftBounds</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Gets the <a href="#//api/name/bottom">bottom</a> <a href="#//api/name/left">left</a> corner of the view&rsquo;s bounds.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly) CGPoint bottomLeftBounds</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Gets the <a href="#//api/name/bottom">bottom</a> <a href="#//api/name/left">left</a> corner of the view&rsquo;s bounds.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UIView+Positioning.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/bottomRight" title="bottomRight"></a>
+	<h3 class="subsubtitle method-title">bottomRight</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Gets the <a href="#//api/name/bottom">bottom</a> <a href="#//api/name/right">right</a> corner of the view&rsquo;s frame.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly) CGPoint bottomRight</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Gets the <a href="#//api/name/bottom">bottom</a> <a href="#//api/name/right">right</a> corner of the view&rsquo;s frame.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UIView+Positioning.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/bottomRightBounds" title="bottomRightBounds"></a>
+	<h3 class="subsubtitle method-title">bottomRightBounds</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Gets the <a href="#//api/name/bottom">bottom</a> <a href="#//api/name/right">right</a> corner of the view&rsquo;s bounds.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly) CGPoint bottomRightBounds</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Gets the <a href="#//api/name/bottom">bottom</a> <a href="#//api/name/right">right</a> corner of the view&rsquo;s bounds.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UIView+Positioning.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/boundsCenter" title="boundsCenter"></a>
+	<h3 class="subsubtitle method-title">boundsCenter</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Gets the center of the view&rsquo;s bounds.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly) CGPoint boundsCenter</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Gets the center of the view&rsquo;s bounds.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UIView+Positioning.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/height" title="height"></a>
+	<h3 class="subsubtitle method-title">height</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets the height of the view</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property CGFloat height</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Sets the height of the view</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UIView+Positioning.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/left" title="left"></a>
+	<h3 class="subsubtitle method-title">left</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets the left edge of the view</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property CGFloat left</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Sets the left edge of the view</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UIView+Positioning.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/right" title="right"></a>
+	<h3 class="subsubtitle method-title">right</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets the right edge of the view to the given location b<a href="#//api/name/y">y</a> moving origin appropriatel<a href="#//api/name/y">y</a>. Does not change <a href="#//api/name/width">width</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property CGFloat right</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Sets the right edge of the view to the given location b<a href="#//api/name/y">y</a> moving origin appropriatel<a href="#//api/name/y">y</a>. Does not change <a href="#//api/name/width">width</a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UIView+Positioning.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/top" title="top"></a>
+	<h3 class="subsubtitle method-title">top</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets the top edge of the view</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property CGFloat top</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Sets the top edge of the view</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UIView+Positioning.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/topLeft" title="topLeft"></a>
+	<h3 class="subsubtitle method-title">topLeft</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Gets the <a href="#//api/name/top">top</a> <a href="#//api/name/left">left</a> corner of the view&rsquo;s frame.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly) CGPoint topLeft</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Gets the <a href="#//api/name/top">top</a> <a href="#//api/name/left">left</a> corner of the view&rsquo;s frame.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UIView+Positioning.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/topLeftBounds" title="topLeftBounds"></a>
+	<h3 class="subsubtitle method-title">topLeftBounds</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Gets the <a href="#//api/name/top">top</a> <a href="#//api/name/left">left</a> corner of the view&rsquo;s bounds.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly) CGPoint topLeftBounds</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Gets the <a href="#//api/name/top">top</a> <a href="#//api/name/left">left</a> corner of the view&rsquo;s bounds.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UIView+Positioning.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/topRight" title="topRight"></a>
+	<h3 class="subsubtitle method-title">topRight</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Gets the <a href="#//api/name/top">top</a> <a href="#//api/name/right">right</a> corner of the view&rsquo;s frame.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly) CGPoint topRight</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Gets the <a href="#//api/name/top">top</a> <a href="#//api/name/right">right</a> corner of the view&rsquo;s frame.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UIView+Positioning.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/topRightBounds" title="topRightBounds"></a>
+	<h3 class="subsubtitle method-title">topRightBounds</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Gets the <a href="#//api/name/top">top</a> <a href="#//api/name/right">right</a> corner of the view&rsquo;s bounds.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly) CGPoint topRightBounds</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Gets the <a href="#//api/name/top">top</a> <a href="#//api/name/right">right</a> corner of the view&rsquo;s bounds.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UIView+Positioning.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/width" title="width"></a>
+	<h3 class="subsubtitle method-title">width</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets the width of the view</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property CGFloat width</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Sets the width of the view</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UIView+Positioning.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/x" title="x"></a>
+	<h3 class="subsubtitle method-title">x</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets the x coordinate of center.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property CGFloat x</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Sets the x coordinate of center.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UIView+Positioning.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/y" title="y"></a>
+	<h3 class="subsubtitle method-title">y</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets the y coordinate of center.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property CGFloat y</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Sets the y coordinate of center.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UIView+Positioning.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/evenlyDistributeHorizontallySubviewsInArray:" title="evenlyDistributeHorizontallySubviewsInArray:"></a>
+	<h3 class="subsubtitle method-title">evenlyDistributeHorizontallySubviewsInArray:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Given an arra<a href="#//api/name/y">y</a> of subviews, adjust their frames to evenl<a href="#//api/name/y">y</a> distribute them within the parent view.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)evenlyDistributeHorizontallySubviewsInArray:(NSArray *)<em>inSubviews</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Given an arra<a href="#//api/name/y">y</a> of subviews, adjust their frames to evenl<a href="#//api/name/y">y</a> distribute them within the parent view.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UIView+Positioning.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/frameInRelationToView:" title="frameInRelationToView:"></a>
+	<h3 class="subsubtitle method-title">frameInRelationToView:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the frame of the receiver within the coordinate system of the given view.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (CGRect)frameInRelationToView:(UIView *)<em>inView</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns the frame of the receiver within the coordinate system of the given view.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UIView+Positioning.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/spreadSubviewsIntoGrid:" title="spreadSubviewsIntoGrid:"></a>
+	<h3 class="subsubtitle method-title">spreadSubviewsIntoGrid:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Given a two dimensional arra<a href="#//api/name/y">y</a> of arrays of subviews, distribute them evenl<a href="#//api/name/y">y</a> within the receiver. All rows must have all the same number of elements. If you have a row with fewer elements, fill with NSNull to pad the row.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)spreadSubviewsIntoGrid:(NSArray *)<em>inGridOfSubviews</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Given a two dimensional arra<a href="#//api/name/y">y</a> of arrays of subviews, distribute them evenl<a href="#//api/name/y">y</a> within the receiver. All rows must have all the same number of elements. If you have a row with fewer elements, fill with NSNull to pad the row.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UIView+Positioning.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2012 Random Ideas, LLC. All rights reserved. (Last updated: 2012-11-09)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 789)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>
