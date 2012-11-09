@@ -5,7 +5,7 @@
 //  Copyright 2008 Random Ideas, LLC. All rights reserved.
 //
 
-#import "NSData_Base64.h"
+#import "NSData+Base64.h"
 
 
 static const char encodingTable[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";

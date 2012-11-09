@@ -6,7 +6,7 @@
 //  Copyright 2009 Random Ideas, LLC. All rights reserved.
 //
 
-#import "UIView_Positioning.h"
+#import "UIView+Positioning.h"
 
 
 @implementation UIView (Positioning)
