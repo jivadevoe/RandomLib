@@ -113,7 +113,7 @@
     else
     {
         NSError *error = nil;
-        error = [NSError errorWithDomain:@"Error" code:statusCode userInfo:[NSDictionary dictionaryWithObject:[NSString stringWithFormat:@"Server side error: %ld", self.statusCode] forKey:NSLocalizedDescriptionKey]];
+        error = [NSError errorWithDomain:@"Error" code:statusCode userInfo:[NSDictionary dictionaryWithObject:[NSString stringWithFormat:@"Server side error: %d", self.statusCode] forKey:NSLocalizedDescriptionKey]];
         
         if(failureBlock)
             failureBlock(error);
