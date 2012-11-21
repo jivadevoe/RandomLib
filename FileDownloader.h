@@ -20,6 +20,9 @@
 /// This method is called in the event of an error.
 -(void)downloader:(FileDownloader *)inDownloader failedWithError:(NSError *)inError;
 
+/// This method is called when a data packet is received. Only available for protocols implementations that report the content length as part of the response.
+-(void)downloader:(FileDownloader *)inDownloader downloadProgressWasUpdatedTo:(float)downloadProgress;
+
 @end
 
 /** The file downloader class makes downloading files from the Internet a breeze. You simply specify the location that you want to download the file to on the local file system and specify the URL from which to download the file and it will let you know when it's finished.

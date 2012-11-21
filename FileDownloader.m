@@ -10,6 +10,7 @@
 
 @interface FileDownloader ()
 @property (nonatomic) int statusCode;
+@property (nonatomic) float expectedContentLenght;
 @end
 
 
@@ -88,6 +89,7 @@
 {
     NSHTTPURLResponse *resp = (NSHTTPURLResponse *)response;
     self.statusCode = [resp statusCode];
+    self.expectedContentLenght = response.expectedContentLength;
 }
 
 
@@ -132,6 +134,11 @@
 - (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)inData
 {
     [data appendData:inData];
+    
+    float downloadedLenght = data.length;
+    float downloadProgress = downloadedLenght / self.expectedContentLenght;
+	
+	[self.delegate downloader:self downloadProgressWasUpdatedTo:downloadProgress];
 }
 
 @end
