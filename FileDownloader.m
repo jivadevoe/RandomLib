@@ -76,9 +76,13 @@
     return [self initWithRequest:req toLocalFileNamed:inLocalName forDelegate:inDelegate];
 }
 
--(void)dealloc;
+-(void)cancel;
 {
     [connection cancel];
+}
+
+-(void)dealloc;
+{
     [self setData:nil];
     [self setConnection:nil];
     [self setLocalName:nil];

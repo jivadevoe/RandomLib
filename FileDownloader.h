@@ -59,4 +59,6 @@
 -(id)initWithRequest:(NSMutableURLRequest *)inReq toLocalFileNamed:(NSString *)inLocalName forDelegate:(id<FileDownloaderDelegate>)inDelegate;
 -(id)initWithRequest:(NSMutableURLRequest *)inReq toLocalFileNamed:(NSString *)inLocalName forDelegate:(id<FileDownloaderDelegate>)inDelegate  completionBlock:(void (^)())inCompletionBlock failureBlock:(void (^)(NSError *))inFailureBlock;
 
+-(void)cancel;
+
 @end
