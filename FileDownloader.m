@@ -10,6 +10,7 @@
 
 @interface FileDownloader ()
 @property (nonatomic) int statusCode;
+@property (nonatomic) float expectedContentLenght;
 @end
 
 
@@ -75,9 +76,13 @@
     return [self initWithRequest:req toLocalFileNamed:inLocalName forDelegate:inDelegate];
 }
 
--(void)dealloc;
+-(void)cancel;
 {
     [connection cancel];
+}
+
+-(void)dealloc;
+{
     [self setData:nil];
     [self setConnection:nil];
     [self setLocalName:nil];
@@ -88,6 +93,7 @@
 {
     NSHTTPURLResponse *resp = (NSHTTPURLResponse *)response;
     self.statusCode = [resp statusCode];
+    self.expectedContentLenght = response.expectedContentLength;
 }
 
 
@@ -107,7 +113,7 @@
     else
     {
         NSError *error = nil;
-        error = [NSError errorWithDomain:@"Error" code:statusCode userInfo:[NSDictionary dictionaryWithObject:[NSString stringWithFormat:@"Server side error: %ld", self.statusCode] forKey:NSLocalizedDescriptionKey]];
+        error = [NSError errorWithDomain:@"Error" code:statusCode userInfo:[NSDictionary dictionaryWithObject:[NSString stringWithFormat:@"Server side error: %d", self.statusCode] forKey:NSLocalizedDescriptionKey]];
         
         if(failureBlock)
             failureBlock(error);
@@ -132,6 +138,11 @@
 - (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)inData
 {
     [data appendData:inData];
+    
+    float downloadedLenght = data.length;
+    float downloadProgress = downloadedLenght / self.expectedContentLenght;
+	
+	[self.delegate downloader:self downloadProgressWasUpdatedTo:downloadProgress];
 }
 
 @end
