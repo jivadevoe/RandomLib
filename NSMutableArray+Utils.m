@@ -9,8 +9,8 @@
 #error This file must be compiled with ARC.
 #endif
 
-#import "NSMutableArray_Utils.h"
-#import "NSArray_Utils.h"
+#import "NSMutableArray+Utils.h"
+#import "NSArray+Utils.h"
 
 @implementation NSMutableArray (Utils)
 
