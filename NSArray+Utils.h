@@ -7,7 +7,13 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSArray (FOUtils)
+@interface NSArray (Utils)
 /// C'mon.. everyone has one of these.  Mine works even if the array is zero length.  It returns nil.
 -(id)firstObject;
+
++(id)arrayWithUniqueObjectsFromArray:(NSMutableArray *)otherArray;
++(id)arrayWithCount:(int)count string:(NSString *)templateObject;
+
+/// converts an array into a two-dimensional array of arrays with the specified depth
+-(id)twoDimensionalArrayWithDepth:(NSInteger)inDepth;
 @end
