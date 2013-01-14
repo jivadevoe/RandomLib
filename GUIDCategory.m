@@ -7,8 +7,6 @@
 
 #import "GUIDCategory.h"
 
-static unsigned long lastId = 0;
-
 @implementation NSString (UUID)
 + (NSString*)stringWithUUID
 {
