@@ -139,10 +139,14 @@
 {
     [data appendData:inData];
     
-    float downloadedLenght = data.length;
-    float downloadProgress = downloadedLenght / self.expectedContentLenght;
-	
-	[self.delegate downloader:self downloadProgressWasUpdatedTo:downloadProgress];
+    if([delegate respondsToSelector:@selector(downloader:downloadProgressWasUpdatedTo:)] &&
+       self.expectedContentLenght != NSURLResponseUnknownLength)
+    {
+        float downloadedLenght = data.length;
+        float downloadProgress = downloadedLenght / self.expectedContentLenght;
+        
+        [self.delegate downloader:self downloadProgressWasUpdatedTo:downloadProgress];
+    }
 }
 
 @end
