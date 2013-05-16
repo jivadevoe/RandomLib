@@ -11,8 +11,9 @@ typedef NS_ENUM(int, RILogLevel)
 {
     RI_LOG_NONE = 0,
     RI_LOG_ERROR = 100,
-    RI_LOG_INFO = 200,
-    RI_LOG_DEBUG = 300
+    RI_LOG_WARN = 200,
+    RI_LOG_INFO = 300,
+    RI_LOG_DEBUG = 400
 };
 
 @interface RILog : NSObject
@@ -26,3 +27,4 @@ typedef NS_ENUM(int, RILogLevel)
 #define INFOLOG(...) [[RILog sharedInstance] logMessageAtLevel:RI_LOG_NONE withFormat:__VA_ARGS__];
 #define DEBUGLOG(...) [[RILog sharedInstance] logMessageAtLevel:RI_LOG_DEBUG withFormat:__VA_ARGS__];
 #define ERRORLOG(...) [[RILog sharedInstance] logMessageAtLevel:RI_LOG_ERROR withFormat:__VA_ARGS__];
+#define WARNLOG(...) [[RILog sharedInstance] logMessageAtLevel:RI_LOG_WARN withFormat:__VA_ARGS__];
