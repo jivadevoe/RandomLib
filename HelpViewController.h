@@ -12,12 +12,12 @@
 @property (weak, nonatomic)  id<ViewControllerDelegate> delegate;
 @property (strong, nonatomic) UIWebView * webView;
 @property (strong, nonatomic) UIActivityIndicatorView * spinner;
-@property (strong, nonatomic) NSString * helpUrl;
 @property (strong, nonatomic) UINavigationBar * navBar;
 @property (strong, nonatomic) UIButton * button;
 @property (nonatomic, strong) NSString * appTitle;
 
--(id)initWithHelpFileURL:(NSString *)inWebUrl;
+-(id)initWithHelpFileURL:(NSString *)inWebUrl __attribute__((deprecated));;
+-(id)initWithHelpURL:(NSURL *)inWebUrl;
 -(IBAction)doneTouched:(id)sender;
 
 @end

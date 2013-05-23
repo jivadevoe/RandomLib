@@ -8,15 +8,25 @@
 #import "HelpViewController.h"
 #import "UIView+Positioning.h"
 
+@interface HelpViewController ()
+@property (strong, nonatomic) NSURL *helpURL;
+@end
+
+
 @implementation HelpViewController
 
 -(id)initWithHelpFileURL:(NSString *)inWebUrl;
 {
+    return [self initWithHelpURL:[NSURL URLWithString:inWebUrl]];
+}
+
+-(id)initWithHelpURL:(NSURL *)inWebUrl;
+{
     if((self = [super initWithNibName:@"HelpView" bundle:nil]))
     {
-        [self setHelpUrl:inWebUrl];
+        [self setHelpURL:inWebUrl];
     }
-    return self;
+    return self;    
 }
 
 -(BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation;
@@ -57,7 +67,7 @@
 
 - (void)viewDidLoad 
 {
-    [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:self.helpUrl]]];
+    [self.webView loadRequest:[NSURLRequest requestWithURL:self.helpURL]];
     [[self.navBar topItem] setTitle:@"Loading..."];
     
     if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
