@@ -37,7 +37,7 @@
 
 -(IBAction)doneTouched:(id)sender;
 {
-    [self dismissModalViewControllerAnimated:YES];
+    [self dismissViewControllerAnimated:YES completion:nil];
     [self.delegate viewControllerFinishedModalAction:self];
 }
 
