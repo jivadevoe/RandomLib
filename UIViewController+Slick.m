@@ -76,6 +76,16 @@
 {
     id<SlickViewControllerDelegate> delegate = objc_getAssociatedObject(self, @"com.random-ideas.DELEGATE");
     UIViewController *controller = objc_getAssociatedObject(self, @"com.random-ideas.FLIPPED_CONTROLLER");
+    
+    if([sender isKindOfClass:[UIGestureRecognizer class]])
+    {
+        UIGestureRecognizer *rec = (UIGestureRecognizer *)sender;
+        UIView *darkenView = objc_getAssociatedObject(self, @"com.random-ideas.DARKENED_VIEW");
+        if(CGRectContainsPoint(controller.view.frame, [rec locationInView:darkenView]))
+        {
+            return;
+        }
+    }
 
     if([delegate respondsToSelector:@selector(slickViewControllerCanDismiss:)])
     {
@@ -132,6 +142,7 @@
     UIView *darkenView = [[UIView alloc] initWithFrame:parentFrame];
     //darkenView.center = parentView.boundsCenter;
     UIGestureRecognizer *rec = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(slick_darkDismiss:)];
+    rec.cancelsTouchesInView = NO;
     [darkenView addGestureRecognizer:rec];
     
     [darkenView setBackgroundColor:[UIColor blackColor]];
