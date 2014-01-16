@@ -31,6 +31,15 @@ HTML Documentation generated from appledoc can be found in the `/Docs` directory
 
 BTW, if anyone knows a way to get Appledoc to generate docs that are easily browseable from github, please tell me.
 
+FIND THIS USEFUL?
+-----------------
+
+Why don't you buy me a beer with bitcoin?
+
+My wallet address is: 1JtjkQFmJmbMumWquh5J2fuRuD6LkWr5QL
+
+![Wallet QR Code](http://www.random-ideas.net/qrcode.png)
+
 LICENSE
 =======
 
