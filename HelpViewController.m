@@ -41,11 +41,7 @@
 
 -(IBAction)doneTouched:(id)sender;
 {
-#if __IPHONE_OS_VERSION_MIN_REQUIRED >= __IPHONE_6_0
-    [self dismissViewControllerAnimated:YES completion:nil];
-#else
-    [self dismissModalViewControllerAnimated:YES];
-#endif
+
     [self.delegate viewControllerFinishedModalAction:self];
 }
 
